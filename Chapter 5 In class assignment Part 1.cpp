@@ -15,11 +15,21 @@ using namespace std;
 
 int main()
 {
-    int choice, num1, num2, result;
+    int choice;
+
+    double num1;
+    double num2;
+    double result = 1;
     
     cout << "Welcome to the VS calculator!" << endl;
-    cout << "Enter a difit corresponding to the operation: " << endl;
-    cout << "1. Addition \n2. Subtraction \n3.Multiplication \n4.Division \n5. Modulo \n6. Power \n. (Exit Code)" << endl;
+    cout << "Enter a digit corresponding to the operation: " << endl;
+    cout << "1. Addition" << endl;
+    cout << "2. Subtraction" << endl;
+    cout << "3. Multiplication" << endl;
+    cout << "4. Division" << endl;
+    cout << "5. Modulo" << endl;
+    cout << "6. Power" << endl;
+    cout << "7. Exit Code" << endl;
 
     cin >> choice;
     
@@ -43,10 +53,9 @@ int main()
         break;
     }
 
-    cout << "Hmm, looks like your answer is...!" << result;
+    cout << "Hmm, looks like your answer is...!" << result << endl;
 
-    return 0;
-}
+} while (repeat);
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
